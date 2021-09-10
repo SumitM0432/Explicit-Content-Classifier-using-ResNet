@@ -11,9 +11,9 @@ transform_data = transforms.Compose([
     transforms.RandomGrayscale(p = 0.2),
     transforms.ToTensor()
 ])
-def data_aug(genre, times):
+def data_aug(genre, times, file_path):
 
-    dataset = datasets.ImageFolder('/media/levi/OS/Users/sumit/Desktop/Explicit Content Classifier/ss', transform = transform_data)
+    dataset = datasets.ImageFolder(file_path, transform = transform_data)
 
     data_loader = torch.utils.data.DataLoader(dataset, batch_size = 1, shuffle = True)
 
