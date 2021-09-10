@@ -56,7 +56,7 @@ def predict_resnet(file_path, DEVICE, model_name, type):
 if __name__ == '__main__':
 
     # Predicting
-    pred, lab = predict_resnet(config.TESTING_FILE, config.DEVICE, model_name = 'Resnet101_e5_0.0001', type = 50)
+    pred, lab = predict_resnet(config.TESTING_FILE, config.DEVICE, model_name = 'Resnet101_e5_0.0001', type = 50) # Name of the model and type i.e. resnet50 is 50 and resnet101 means 101
 
     # Evaluation
     metrics.metric_scores(lab, pred)
