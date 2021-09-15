@@ -27,4 +27,10 @@ For preprocessing, the images are resized to 224x224 as the model input size was
 ## Model
 Two models were trained named ResNet50 and ResNet101 from the [Torchvision Model](https://pytorch.org/vision/stable/models.html) library. Accuracy, classification report, and confusion metrics are used to judge the performances of the model. Each model is trained for 2 and 5 epochs with 0.001 and 0.0001 Learning rates. The loss curve and confusion matrix plotted are given in the `Images` folder.
 > The framework used for models is PyTorch.
-> 
+
+## How to Run
+> Run the `gui.py` file in the `GUI` folder </br>
+The GUI, I made is pretty Simple, it has three options:
+- Choose Folder: Choose the folder that contains the images.
+- Predict: Do the predictions using the saved model in the `Output` Folder. [new models can also be trained]
+- Exit: Self Explanatory
